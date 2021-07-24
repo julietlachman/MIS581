@@ -4,13 +4,13 @@
 # APPENDIX A
 
 /*   import - begin   */
-libname PERM '/folders/myfolders/';
+git commit -m libname PERM '/folders/myfolders/';
 
 proc import
-	datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv'
-	dbms=csv out=WORK.MIS543_M8_PP_OPT1 replace;
-	GETNAMES=YES;
-run;
+git commit -m datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv'
+git commit -m dbms=csv out=WORK.MIS543_M8_PP_OPT1 replace;
+git commit -m GETNAMES=YES;
+git commit -m run;
 
 /*   data - begin   */
 data sales;
