@@ -4,10 +4,10 @@
 # APPENDIX A
 
 /*   import - begin   */
-libname PERM '/folders/myfolders/'; 
+libname PERM '/folders/myfolders/';
 
-proc import 
-	datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv' 
+proc import
+	datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv'
 	dbms=csv out=WORK.MIS543_M8_PP_OPT1 replace;
 	GETNAMES=YES;
 run;
