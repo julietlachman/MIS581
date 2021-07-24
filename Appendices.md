@@ -3,29 +3,29 @@
 
 # APPENDIX A
 
-/*   import - begin   */ -m
-git commit -m libname PERM '/folders/myfolders/'; -m
+/*   import - begin   */  
+libname PERM '/folders/myfolders/';  
 
-proc import -m
-	datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv' -m
-	dbms=csv out=WORK.MIS543_M8_PP_OPT1 replace; -m
-	GETNAMES=YES; -m
-run;
+proc import  
+	datafile='/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv'  
+	dbms=csv out=WORK.MIS543_M8_PP_OPT1 replace;  
+	GETNAMES=YES;  
+run;  
 
-/*   data - begin   */
-data sales;
-	infile '/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv' DLM=',';
-	input customer_id zip_code num_purch_visits total_net_sales cc_card avg_spent_visit p_sweaters p_knit_tops p_knit_dres p_blouses p_jackets p_car_pnts p_cas_pnts p_shirts p_dresses p_suits p_outerwear p_jewelry p_fashion p_legwear p_collectibles gmp numb_mkt_promos num_days_cust_file mrkdn_pntg lifestyle_clustype pcnt_rtns days_btwn_purch lifetime_avg_btwn_visits;
-run;
+/*   data - begin   */  
+data sales;  
+	infile '/folders/myfolders/sasuser.v94/clothing_store_pp_opt1.csv' DLM=',';  
+	input customer_id zip_code num_purch_visits total_net_sales cc_card avg_spent_visit p_sweaters p_knit_tops p_knit_dres p_blouses p_jackets p_car_pnts p_cas_pnts p_shirts p_dresses p_suits p_outerwear p_jewelry p_fashion p_legwear p_collectibles gmp numb_mkt_promos num_days_cust_file mrkdn_pntg lifestyle_clustype pcnt_rtns days_btwn_purch lifetime_avg_btwn_visits;  
+run;  
 
-proc datasets lib=WORK nolist;
-	modify MIS543_M8_PP_OPT1;
-	label customer_id='Customer ID';
-	label zip_code='Zip Code';
-	label num_purch_visits='Number of Purchases in Visit' ;
-	label total_net_sales='Total Net Sales';
-	label cc_card='Credit Card';
-	label avg_spent_visit='Average Amount Spent per Visit';
+proc datasets lib=WORK nolist;  
+	modify MIS543_M8_PP_OPT1;  
+	label customer_id='Customer ID';  
+	label zip_code='Zip Code';  
+	label num_purch_visits='Number of Purchases in Visit';  
+	label total_net_sales='Total Net Sales';  
+	label cc_card='Credit Card';  
+	label avg_spent_visit='Average Amount Spent per Visit';  
 	label p_sweaters='Sweaters (Total Sales %)';
 	label p_knit_tops='Tops (Total Sales %)';
 	label p_knit_dres='Knit Dresses (Total Sales %)';
