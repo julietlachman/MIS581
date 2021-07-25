@@ -1,7 +1,7 @@
-## APPENDICES
+# APPENDICES
 
 
-# APPENDIX A
+## APPENDIX A
 
 /*   import - begin   */  
 libname PERM '/folders/myfolders/';   
@@ -91,7 +91,7 @@ run;
 
 
 
-# APPENDIX B
+## APPENDIX B
 
 /*  One-Way Anova on lifestyle_clustype and p_jackets - begin  */  
 Title;  
@@ -109,7 +109,7 @@ quit;
   
 
 
-# APPENDIX C
+## APPENDIX C
 
 /*   import - begin   */  
 libname PERM '/folders/myfolders/';   
@@ -199,7 +199,7 @@ run;
 
 
 
-# APPENDIX D
+## APPENDIX D
 
 /*   secondary summary statistics - begin   */  
 ods noproctitle;  
@@ -221,7 +221,7 @@ run;
 
 
 
-# APPENDIX E
+## APPENDIX E
 
 /*  ONE-WAY ANOVA  */  
 /*  One-Way Anova on lifestyle_clustype and p_jackets - begin  */  
@@ -241,7 +241,7 @@ quit;
 
 
 
-# APPENDIX F
+## APPENDIX F
 
 /*  One-Way Anova on lifestyle_clustype and total_net_sales - begin  */  
 Title;  
@@ -260,7 +260,7 @@ quit;
 
 
 
-# APPENDIX G
+## APPENDIX G
 
 /*  One-Way Anova on cc_card and total_net_sales - begin  */  
 Title;  
@@ -279,7 +279,7 @@ quit;
 
 
 
-# APPENDIX H
+## APPENDIX H
 
 /*  One-Way Anova on lifestyle_clustype and avg_spent_visit - begin  */  
 Title;  
@@ -298,7 +298,7 @@ quit;
 
 
 
-# APPENDIX I
+## APPENDIX I
 
 /*  One-Way Anova on cc_card and pcnt_rtns - begin  */  
 Title;  
@@ -317,7 +317,7 @@ quit;
 
 
 
-# APPENDIX J
+## APPENDIX J
 
 /*  One-Way Anova on lifestyle_clustype and pcnt_rtns - begin  */  
 Title;  
@@ -336,7 +336,7 @@ quit;
 
 
 
-# APPENDIX K
+## APPENDIX K
 
 /*  One-Way Anova on lifestyle_clustype and num_mkt_promos - begin  */  
 Title;  
@@ -355,7 +355,7 @@ quit;
 
 
 
-# APPENDIX L
+## APPENDIX L
 
 /*  PREDICTIVE   */  
 /*   import - begin   */  
